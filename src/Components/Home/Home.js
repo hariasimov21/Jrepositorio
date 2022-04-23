@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import LogoTitle from "../../assets/images/logo-s.png";
+import LogoTitle from "../../assets/images/logopreload.PNG";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import Logo from "../Logo/Logo";
 import "./Home.scss";
 
 const Home = () => {
@@ -69,6 +70,8 @@ const Home = () => {
           Contáctame
         </Link>
       </div>
+
+      <Logo/>
     </div>
   );
 };

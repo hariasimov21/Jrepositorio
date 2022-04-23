@@ -16,7 +16,7 @@ const Layout = () => {
             &lt;/body&gt;
             <br />
           </span>
-          <span className="bottom-tag-html">&lt;/html&gt;</span>
+          <span className="bottom-tag-html">&lt;html&gt;</span>
         </div>
       </div>
     </>
