@@ -63,24 +63,28 @@ const About = () => {
           quaerat.
         </p>
       </div>
-
       <div className="stage-cube-cont">
         <div className="cubespinner">
           <div className="face1">
             <FontAwesomeIcon icon={faBootstrap} color="#8000F3" />
           </div>
+
           <div className="face2">
             <FontAwesomeIcon icon={faHtml5} color="#FF5900" />
           </div>
+
           <div className="face3">
             <FontAwesomeIcon icon={faCss3} color="#009DEF" />
           </div>
+
           <div className="face4">
             <FontAwesomeIcon icon={faReact} color="#23DCFF" />
           </div>
+
           <div className="face5">
             <FontAwesomeIcon icon={faJsSquare} color="#EBDA00" />
           </div>
+
           <div className="face6">
             <FontAwesomeIcon icon={faGitAlt} color="#F43900" />
           </div>

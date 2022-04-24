@@ -127,6 +127,7 @@
       justify-content: center;
       align-items: center;
       box-shadow: 0 0 20px 0px lightyellow;
+      
     }
   
     .face1 {
@@ -150,13 +151,14 @@
       color: #efd81d;
     }
     .face6 {
-      transform: rotateX(-90deg) translateZ(100px);
+      transform: rotateX(-90deg) rotateZ(-90deg) translateZ(100px);
       color: #ec4d28;
     }
   }
   
-  @keyframes spincube { 
-    0% {
+  @keyframes spincube {
+    from,
+    to {
       transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     }
     16% {
