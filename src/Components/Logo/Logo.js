@@ -1,12 +1,7 @@
 import "./Logo.scss";
-import LogoP from "../../assets/images/logo-s.PNG";
-import { useRef } from "react";
+import LogoP from "../../assets/images/logo-s.png";
 
 const Logo = () => {
-  const bgRef = useRef();
-  const outlineLogoRef = useRef();
-  const solidLogoRef = useRef();
-
   return (
     <div className="logo-container">
       <img src={LogoP} className="prinLogo" alt="Logo" />

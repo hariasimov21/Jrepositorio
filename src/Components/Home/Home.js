@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import LogoTitle from "../../assets/images/logopreload.PNG";
+import LogoTitle from "../../assets/images/logopreload.png";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Logo from "../Logo/Logo";
 import "./Home.scss";
@@ -71,7 +71,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <Logo/>
+      <Logo />
     </div>
   );
 };
