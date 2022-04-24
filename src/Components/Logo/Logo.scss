@@ -26,7 +26,9 @@
         z-index: 1;
 
          &:hover {
-            animation: rubberBand 1s reverse;
+             transition: 1s;
+            transform:  rotate(375deg);
+            animation: fadeIn forwards ;
         } 
 
     }

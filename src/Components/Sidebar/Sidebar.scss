@@ -18,7 +18,11 @@
             height: auto;
 
             &.sub-logo {
-                width: 50px;
+                width: 60px;
+
+                &:hover{
+                    animation: pulse 1s reverse;
+                }
             }
 
         }
