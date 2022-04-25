@@ -2,6 +2,9 @@ $primary-color: #19B57D;
 
 @import 'animate.css';
 
+@import 'loaders.css/src/animations/cube-transition.scss';
+
+
 @font-face{
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
@@ -22,6 +25,26 @@ $primary-color: #19B57D;
   src: url("./assets/fonts/SciAuralieph.otf") format('opentype');
 }
 
+
+
 input, textarea {
   font-family: 'Helvetica Neue';
+}
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 0.5s 0.5s;
+  animation-fill-mode: forwards;
+  
 }
