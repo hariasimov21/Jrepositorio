@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
-//import LogoTitle from "../../assets/images/logopreload.png";
-import LogoTitle from "../../assets/images/logopreload.PNG";
+import LogoTitle from "../../assets/images/logopreload.png";
+//import LogoTitle from "../../assets/images/logopreload.PNG";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Logo from "../Logo/Logo";
 import "./Home.scss";
@@ -42,41 +42,41 @@ const Home = () => {
 
   return (
     <>
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>o</span>
-          <span className={`${letterClass} _13`}>l</span>
-          <span className={`${letterClass} _14`}>a</span>
-          <br />
-          <span className={`${letterClass} _15`}>S</span>
-          <span className={`${letterClass} _16`}>o</span>
-          <span className={`${letterClass} _17`}>y</span>
-          <span className={`${letterClass} _18`}> </span>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>o</span>
+            <span className={`${letterClass} _13`}>l</span>
+            <span className={`${letterClass} _14`}>a</span>
+            <br />
+            <span className={`${letterClass} _15`}>S</span>
+            <span className={`${letterClass} _16`}>o</span>
+            <span className={`${letterClass} _17`}>y</span>
+            <span className={`${letterClass} _18`}> </span>
 
-          <img src={LogoTitle} alt="desarrollador"></img>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={19}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={24}
-          />
-        </h1>
-        <h2> Desarrollador Front-end / Junior</h2>
-        <Link to="/contact" className="flat-button">
-          Contáctame
-        </Link>
+            <img src={LogoTitle} alt="desarrollador"></img>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={19}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={24}
+            />
+          </h1>
+          <h2> Desarrollador Front-end / Junior</h2>
+          <Link to="/contact" className="flat-button">
+            Contáctame
+          </Link>
+        </div>
+
+        <Logo />
       </div>
-
-      <Logo />
-    </div>
-    <Loader type="cube-transition"/>
+      <Loader type="cube-transition" />
     </>
   );
 };

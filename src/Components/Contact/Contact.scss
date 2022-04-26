@@ -92,6 +92,88 @@
                     color: #ffffff;
                 }
             }
+
+            .contact-form{
+                width: 100%;
+                margin-top: 20px;
+
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                        margin-bottom: 10px;
+                        overflow: hidden;
+                        display: block;
+                        opacity: 0;
+                        animation: fadeInUp 2s 2s;
+                        animation-fill-mode: forwards;
+                        clear: both;
+
+                    }
+
+                    li.Half{
+                        width: 49%;
+                        margin-left: 2%;
+                        float: left;
+                        clear: none;
+
+                        &:first-child{
+                            margin-left: 0
+                        }
+                    }
+
+                }
+
+                input[type="text"],
+                input[type="email"]{
+                    width: 100%;
+                    border: 0;
+                    background: #444444;
+                    height: 40px;
+                    font-size: 16px;
+                    color: #63C74D;
+                    padding: 0 20px;
+                    box-sizing: border-box;
+                }
+
+                textarea{
+                    width: 100%;
+                    border: 0;
+                    background: #444444;
+                    height: 80px;
+                    font-size: 16px;
+                    color: #63C74D;
+                    padding: 15px 20px;
+                    min-height: 150px;
+                    box-sizing: border-box;
+                }
+
+                .flat-button{
+                    color: #63C74D;
+                    font-size: 16px;
+                    font-weight: 400;    
+                    font-family: sans-serif;
+                    background: #444444;
+                    text-decoration: none;
+                    padding: 10px 18px;
+                    border: 1px solid #63C74D;
+                    border-radius: 5px;
+                    margin-top: 2px;
+                    float: left;
+                    animation: fadeIn 1s 1.8s backwards;
+                    white-space: nowrap;
+            
+                    &:hover {
+                        transition: 0.5s;
+                        background: #63C74D;
+                        color: #ffffff;
+                    }
+                }
+            }
         
     }
 }

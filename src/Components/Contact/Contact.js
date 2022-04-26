@@ -29,6 +29,42 @@ const Contact = () => {
             eos quam doloribus rerum nemo minus consequuntur vitae porro modi
             aliquid?
           </p>
+          <div className="contact-form">
+            <form>
+              <ul>
+                <li className="Half">
+                  <input type="text" name="Name" placeholder="Name" required />
+                </li>
+                <li className="Half">
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Correo electrónico"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    type="text"
+                    name="Asunto"
+                    placeholder="Asunto"
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea
+                    type="text"
+                    name="Mensaje"
+                    placeholder="Mensaje"
+                    required
+                  />
+                </li>
+                <li>
+                  <input type="submit" className="flat-button" value="Enviar" />
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
       </div>
       <Loader type="cube-transition" />
