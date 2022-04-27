@@ -1,10 +1,38 @@
 import Loader from "react-loaders";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import "./Contact.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Map from "../Map/Map";
+
 
 const Contact = () => {
   const [letterClass, setletterClass] = useState("text-animate");
+  const resform = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_aurcy1s",
+        "template_y8p6r09",
+        resform.current,
+        "4Aox3UZg8KykIWBox"
+      )
+      .then(
+        (result) => {
+          window.location.reload(false);
+          alert("Mensaje enviado correctamente!");
+          console.log(result.text);
+        },
+        (error) => {
+          window.location.reload(false);
+          alert("no se pudo enviar el mensaje");
+          console.error(error.text);
+        }
+      );
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,6 +43,7 @@ const Contact = () => {
   return (
     <>
       <div className="container contact-page">
+    <Map/>
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -30,10 +59,15 @@ const Contact = () => {
             aliquid?
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={resform} onSubmit={sendEmail}>
               <ul>
                 <li className="Half">
-                  <input type="text" name="Name" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Nombre"
+                    required
+                  />
                 </li>
                 <li className="Half">
                   <input
@@ -67,6 +101,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      
+
       <Loader type="cube-transition" />
     </>
   );

@@ -1,6 +1,6 @@
 import "./Logo.scss";
-import LogoP from "../../assets/images/logo-s.png";
-//import LogoP from "../../assets/images/logo-s.PNG";
+//import LogoP from "../../assets/images/logo-s.png";
+import LogoP from "../../assets/images/logo-s.PNG";
 
 const Logo = () => {
   return (
